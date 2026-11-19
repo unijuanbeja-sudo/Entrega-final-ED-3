@@ -1,0 +1,47 @@
+test_api_brigadas (test_api.APIEpiRed.test_api_brigadas) ... 127.0.0.1 - - [17/Nov/2026 23:03:37] "GET /api/operaciones/brigadas HTTP/1.1" 200 -
+ok
+test_api_estado (test_api.APIEpiRed.test_api_estado) ... 127.0.0.1 - - [17/Nov/2026 23:03:37] "GET /api/estado?enfermedad=Dengue HTTP/1.1" 200 -
+ok
+test_api_modificacion_y_restauracion (test_api.APIEpiRed.test_api_modificacion_y_restauracion) ... 127.0.0.1 - - [17/Nov/2026 23:03:37] "POST /api/registros/actualizar HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 23:03:37] "GET /api/estado HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 23:03:37] "POST /api/registros/restablecer HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 23:03:37] "GET /api/estado HTTP/1.1" 200 -
+ok
+test_api_muestras (test_api.APIEpiRed.test_api_muestras) ... 127.0.0.1 - - [17/Nov/2026 23:03:37] "GET /api/operaciones/traslado?origen=A&destino=F&via=D HTTP/1.1" 200 -
+ok
+test_api_rechaza_codigos_invalidos (test_api.APIEpiRed.test_api_rechaza_codigos_invalidos) ... 127.0.0.1 - - [17/Nov/2026 23:03:37] "GET /api/ucs?inicio=ZZ&destino=A HTTP/1.1" 400 -
+ok
+test_api_rechaza_inconsistencias (test_api.APIEpiRed.test_api_rechaza_inconsistencias) ... 127.0.0.1 - - [17/Nov/2026 23:03:37] "POST /api/registros/actualizar HTTP/1.1" 400 -
+ok
+test_frontend_disponible (test_api.APIEpiRed.test_frontend_disponible) ... 127.0.0.1 - - [17/Nov/2026 23:03:37] "GET / HTTP/1.1" 200 -
+ok
+test_bfs (test_engine.PruebasEpiRed.test_bfs) ... ok
+test_datos_base (test_engine.PruebasEpiRed.test_datos_base) ... ok
+test_desconectado (test_engine.PruebasEpiRed.test_desconectado) ... ok
+test_dfs (test_engine.PruebasEpiRed.test_dfs) ... ok
+test_error (test_engine.PruebasEpiRed.test_error) ... ok
+test_tsp (test_engine.PruebasEpiRed.test_tsp) ... ok
+test_tsp_subconjunto (test_engine.PruebasEpiRed.test_tsp_subconjunto) ... ok
+test_ucs (test_engine.PruebasEpiRed.test_ucs) ... ok
+test_ucs_mismo_nodo (test_engine.PruebasEpiRed.test_ucs_mismo_nodo) ... ok
+test_welsh (test_engine.PruebasEpiRed.test_welsh) ... ok
+test_alerta_dos_niveles (test_operaciones.EscenariosReproducibles.test_alerta_dos_niveles) ... ok
+test_alerta_saltos_invalidos (test_operaciones.EscenariosReproducibles.test_alerta_saltos_invalidos) ... ok
+test_alerta_un_nivel (test_operaciones.EscenariosReproducibles.test_alerta_un_nivel) ... ok
+test_brigadas_sin_adyacentes_compartidos (test_operaciones.EscenariosReproducibles.test_brigadas_sin_adyacentes_compartidos) ... ok
+test_cambio_reporte_conserva_topologia (test_operaciones.EscenariosReproducibles.test_cambio_reporte_conserva_topologia) ... ok
+test_enlace_con_respaldo (test_operaciones.EscenariosReproducibles.test_enlace_con_respaldo) ... ok
+test_enlace_critico (test_operaciones.EscenariosReproducibles.test_enlace_critico) ... ok
+test_enlace_que_no_existe (test_operaciones.EscenariosReproducibles.test_enlace_que_no_existe) ... ok
+test_reparto_sin_zonas (test_operaciones.EscenariosReproducibles.test_reparto_sin_zonas) ... ok
+test_reparto_y_referencia_mismos_destinos (test_operaciones.EscenariosReproducibles.test_reparto_y_referencia_mismos_destinos) ... ok
+test_sin_ahorro_si_no_existe_desvio_obligatorio (test_operaciones.EscenariosReproducibles.test_sin_ahorro_si_no_existe_desvio_obligatorio) ... ok
+test_traslado_mismos_municipios (test_operaciones.EscenariosReproducibles.test_traslado_mismos_municipios) ... ok
+test_traslado_ucs_con_comparador_explicito (test_operaciones.EscenariosReproducibles.test_traslado_ucs_con_comparador_explicito) ... ok
+test_validacion_tipo_booleano_como_reporte (test_operaciones.EscenariosReproducibles.test_validacion_tipo_booleano_como_reporte) ... ok
+test_varias_enfermedades_distintas (test_operaciones.EscenariosReproducibles.test_varias_enfermedades_distintas) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.525s
+
+OK
